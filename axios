@@ -1,0 +1,21 @@
+const axios = require('axios');
+
+// Claudia.ai API URL (you'll get this from your Claudia.ai account)
+const claudiaApiUrl = 'https://api.claudia.ai/v1/chat';
+
+const getClaudiaResponse = async (userMessage) => {
+  try {
+    const response = await axios.post(claudiaApiUrl, {
+      userMessage: userMessage,
+      apiKey: 'YOUR_CLAUDIA_API_KEY',  // Replace with your actual Claudia.ai API Key
+    });
+
+    console.log('Claudia.ai Response:', response.data);
+  } catch (error) {
+    console.error('Error calling Claudia.ai:', error);
+  }
+};
+
+// Sample chat
+getClaudiaResponse('Hello, how are you?');
+
