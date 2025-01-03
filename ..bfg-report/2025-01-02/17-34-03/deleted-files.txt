@@ -1,0 +1,1 @@
+4264a1e3a1b1b5e0a6e90abc529f76763c15cfd7 127638616 next-swc.darwin-arm64.node
